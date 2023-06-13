@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import ProfileCard from "./ProfileCard";
+import BuzoImg from "./img/buzo.jpg";
+import CamisetaImg from "./img/camiseta.jpg";
+import PantalonImg from "./img/pantalon.jpg";
+import NavBar from "./NavBar/NavBar"
+import ItemListContainer from "./ItemListContainer/ItemListContainer";
+import "bulma/css/bulma.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+    return(
+        <div>
+        <NavBar/>
+        <ItemListContainer greeting='Bienvenidos'/>
+        <div className="columns">
+            <div className= "column is-4">
+                <ProfileCard titulo="Buzo" img={BuzoImg}/>
+            </div>
+            <div className= "column is-4">
+                <ProfileCard titulo="Camiseta" img={CamisetaImg}/>
+            </div>
+            <div className= "column is-4">
+                <ProfileCard titulo="Pantalon" img={PantalonImg}/>
+            </div>
+            
+            
+        </div>
     </div>
-  );
+    )
 }
 
 export default App;
