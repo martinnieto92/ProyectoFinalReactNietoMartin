@@ -1,0 +1,15 @@
+.hola{
+    background-color: #E0E7CF;
+}
+
+.logo{
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 50px;
+}
+
+.letra{
+    font-family: 'Varela Round', sans-serif;
+    color:red;
+}

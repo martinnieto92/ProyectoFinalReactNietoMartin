@@ -1,5 +1,4 @@
-// import ProfileCard from "./ProfileCard";
-// import BuzoImg from "./img/buzo.jpg";
+//import BuzoImg from "./img/buzo.jpg";
 // import CamisetaImg from "./img/camiseta.jpg";
 // import PantalonImg from "./img/pantalon.jpg";
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
@@ -8,6 +7,7 @@ import ItemListContainer from "./ItemListContainer/ItemListContainer";
 import "bulma/css/bulma.css";
 //import ItemCount from "./ItemCount/ItemCount";
 import ItemDetailContainer from "./ItemDetailContainer/ItemDetailContainer";
+//import ProfileCard from './ProfileCard';
 
 
 function App(){
