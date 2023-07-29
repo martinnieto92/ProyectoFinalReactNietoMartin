@@ -3,36 +3,15 @@ import "./Item.css"
 
 const Item = ({ id, name, img, price, stock }) => {
 return (
-    <div className="card-container pepe">
-        <div className="card pepe" style={{ width: "250px", height: "250px" }}>
-            <div className="card-image">
-              <figure className="image is-1by1">
-                <img src={img} alt={name} />
-              </figure>
-            </div>
-            <div className="card-content">
-              <div className="media">
-                {/* <div className="media-left">
-                  <figure className="image is-48x48">
-                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-                  </figure>
-                </div> */}
-                <div className="media-content">
-                  <p className="title is-4">{name}</p>
-                  <p className="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-              <div className="content">
-                <p>Precio: ${price}</p>
-                <p>Stock disponible: {stock}</p>
-              </div>
-        </div>
-            <footer className="card-footer">
-                <Link to={`/item/${id}`} className="card-footer-item">Ver detalle</Link>
-            </footer>
-        </div>
-    </div>
-);
+    <div className='cardProducto'>
+        <img className='imgProducto' src={img} alt={name} />
+        <h3>Nombre: {name} </h3>
+        <p>Precio:{price} </p>
+        <p>ID: {id} </p>
+        <p>Stock: {stock} </p>
+        <Link className='miBtn' to={`/item/${id}`} > Ver Detalles </Link>
+    </div>    
+    );
 }
 
 export default Item;
