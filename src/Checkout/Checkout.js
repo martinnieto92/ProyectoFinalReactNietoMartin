@@ -4,6 +4,7 @@ import { db } from "../config/firebase";
 import { CartContext } from "../context/CartContext";
 import { Timestamp, addDoc, collection, getDocs, query, where, writeBatch, documentId } from "firebase/firestore";
 import CheckoutForm from '../CheckoutForm/CheckoutForm'
+import { Link } from "react-router-dom";
 
 const Checkout = () => {
     const [loading, setLoading] = useState(false)
@@ -70,6 +71,7 @@ const Checkout = () => {
         <div>
             <h1>Checkout</h1>
             <CheckoutForm onConfirm={createOrder} />
+            <Link to="/">Salir</Link>
         </div>
     )
 }
